@@ -83,3 +83,64 @@ section {
     padding: 80px 20px;
     text-align: center;
 }
+
+
+#about, #skills, #projects, #contact {
+    background: #1c1c1c;
+    border-bottom: 1px solid #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff6347;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
